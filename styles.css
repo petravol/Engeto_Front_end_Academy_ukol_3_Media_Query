@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
+  list-style: none;
+  font-size: 23px;
+}
+
+li {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  li {
+    display: flex;
+  }
+}
+
+nav {
+  background-color: #f08d8f;
+  color: white;
+  border-radius: 12px;
+  margin: 10px;
+  height: 4vh;
+  position: relative;
+}
+
+.ikona {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 100vh;
+  }
+  .hero-section-domy {
+    width: 100vh;
+  }
+  .container-ptaci {
+    width: 50vh;
+  }
+}
+
+.hero-section-domy {
+  background-image: url(https://images.unsplash.com/photo-1540503831458-3237544b2ce5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2882&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  bottom: 16px;
+  left: 32px;
+  color: white;
+}
+
+.text-title {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.text-subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  .text-title {
+    font-size: 25px;
+  }
+  .text-subtitle {
+    font-size: 45px;
+  }
+}
+
+.container-ptaci {
+  background-image: url(https://images.unsplash.com/photo-1512419180521-2c5585bdf851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ikona {
+  width: 20px;
+  height: 15px;
+  display: block;
+  margin-left: auto;
+}
+
+.ikona img {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .ikona {
+    display: none;
+  }
+}
